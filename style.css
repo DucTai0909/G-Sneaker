@@ -1,0 +1,238 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  .products {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px; /* Bo góc với bán kính là 30px */
+    margin-right: 10px; /* Khoảng cách 10px giữa phần Products và phần Cart */
+    max-width: 350px; /* Giảm kích thước của phần Products */
+    margin-left: auto; /* Đẩy phần Products về bên phải */
+    margin-right: auto; /* Đẩy phần Cart về bên trái */
+  }
+  
+  .cart {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px; /* Bo góc với bán kính là 30px */
+    margin-left: 10px; /* Khoảng cách 10px giữa phần Cart và phần Products */
+    max-width: 350px; /* Giảm kích thước của phần Cart */
+    margin-left: auto; /* Đẩy phần Cart về bên phải */
+    margin-right: auto; /* Đẩy phần Products về bên trái */
+  }
+  
+  
+  
+  
+  .product-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .product-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .product-list-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .product-list-item h3 {
+    margin: 0;
+  }
+  
+  .product-list-item p {
+    margin-bottom: 5px;
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-list-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .cart-list-item button {
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .cart-list-item button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  .cart-total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .App_shopItem_3FgVU {
+    margin-bottom: 30px; /* hoặc bất kỳ giá trị nào bạn muốn */
+  }
+  .img_product {
+    width: auto; /* Đặt kích thước cho hình ảnh */
+    height: 280px;
+    overflow: hidden; /* Ẩn phần tử ngoài phạm vi của phần tử cha */
+  }
+  
+  .img_product img {
+    width: 100%; /* Đảm bảo hình ảnh đầy đủ và không bị biến dạng */
+    height: 100%;
+    object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng */
+    border-radius: 30px; /* Bo góc với bán kính là 30px */
+  }
+.App_shopItemImage_341iU{
+  border-radius: 30px;
+  margin: 25px;
+}
+.img_cart {
+  width: auto; /* Đặt kích thước cho hình ảnh */
+  height: 130px;
+  overflow: hidden; /* Ẩn phần tử ngoài phạm vi của phần tử cha */
+}
+
+.img_cart img {
+  width: 100%; /* Đảm bảo hình ảnh đầy đủ và không bị biến dạng */
+  height: 100%;
+  object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng */
+  border-radius: 30px; /* Bo góc với bán kính là 30px */
+}
+.App_cartItemImage_341iU{
+  border-radius: 120px; /* hoặc bất kỳ giá trị nào bạn muốn */
+
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.img-background {
+  background-color: #f0f0f0; /* Màu xám nhạt */
+  border-radius: 50%; /* Bo góc để tạo hình tròn */
+  width: 100px; /* Đảm bảo kích thước cố định cho background */
+  height: 100px; /* Đảm bảo kích thước cố định cho background */
+  display: flex; /* Sử dụng flex để căn giữa hình ảnh */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  overflow: hidden; /* Cho phép* Thêm một số lề nếu cần thiết */
+}
+
+.img_cart {
+  width: 100%; /* Hình ảnh tràn ra ngoài background */
+  height: auto; /* Đảm bảo tỷ lệ khung hình được giữ nguyên */
+  border-radius: 50%; /* Làm cho hình ảnh trở thành hình tròn */
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cart-item-price {
+  margin-bottom: 5px;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-decrease,
+.quantity-increase,
+.remove-item {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.quantity {
+  margin: 0 10px;
+}
+.products {
+  position: relative; /* Để phần tử pseudo-element có thể định vị tuyệt đối */
+  padding: 20px; /* Tạo khoảng cách giữa nội dung và viền của section */
+}
+
+.products::before {
+  content: ""; /* Tạo phần tử giả để làm background */
+  position: absolute; /* Đặt vị trí tuyệt đối với section */
+  top: 0; /* Đặt vị trí ở trên cùng của section */
+  left: 0; /* Đặt vị trí ở đầu góc trái của section */
+  width: 140px; /* Đặt chiều rộng của background */
+  height: 140px; /* Đặt chiều cao của background */
+  background-color: #ffd700; /* Đặt màu nền là màu vàng */
+  border-radius: 30px 0 140px 0; /* Tạo hình tròn cho góc bên trái trên */
+  z-index: -1; /* Đặt z-index để phần tử này nằm dưới nội dung khác */
+}
+
+.products-title {
+  /* Các thiết lập khác cho tiêu đề */
+}
+
+.cart {
+  position: relative; /* Để phần tử pseudo-element có thể định vị tuyệt đối */
+  padding: 20px; /* Tạo khoảng cách giữa nội dung và viền của section */
+}
+
+.cart::before {
+  content: ""; /* Tạo phần tử giả để làm background */
+  position: absolute; /* Đặt vị trí tuyệt đối với section */
+  top: 0; /* Đặt vị trí ở trên cùng của section */
+  left: 0; /* Đặt vị trí ở đầu góc trái của section */
+  width: 140px; /* Đặt chiều rộng của background */
+  height: 140px; /* Đặt chiều cao của background */
+  background-color: #ffd700; /* Đặt màu nền là màu vàng */
+  border-radius: 30px 0 140px 0; /* Tạo hình tròn cho góc bên trái trên */
+  z-index: -1; /* Đặt z-index để phần tử này nằm dưới nội dung khác */
+}
+
+.cart-title {
+  /* Các thiết lập khác cho tiêu đề */
+}
